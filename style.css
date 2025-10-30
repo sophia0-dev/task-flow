@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+section {
+  background-color: #f7f7f7;
+  padding: 1em;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#login {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form label {
+  margin-bottom: 10px;
+}
+
+#login-form input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#login-form button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#dashboard {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#dashboard button {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#todo-list, #cgpa-calculator, #quiz {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+#todo-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#todo-list-items li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-list-items li:last-child {
+  border-bottom: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #666;
+}
+#timer-input {
+  width: 50px;
+}
+
+#timer-display {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+#cgpa-calculator {
+  width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#course-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#course-table th, #course-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+#course-table th {
+  background-color: #f0f0f0;
+}
+
+#calculate-cgpa-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#cgpa-result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#calculate-cgpa-btn:hover {
+  background-color: #555;
+}
+
+#course-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+#course-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  #cgpa-calculator {
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  #course-table {
+    font-size: 14px;
+  }
+}
+
+#quiz-section {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question-container {
+  margin-bottom: 20px;
+}
+
+#question {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#options-container {
+  margin-bottom: 20px;
+}
+
+.option {
+  margin-bottom: 10px;
+}
+
+.option input[type="radio"] {
+  margin-right: 10px;
+}
+
+#submit-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+}
+
+
+
+
+
+
